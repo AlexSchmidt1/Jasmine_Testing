@@ -6,4 +6,9 @@ it("should calculate lower-bracket taxes", function () {
 it("should calculate higher-bracket taxes", function () {
 	expect(calculateTaxes(50000)).toEqual(12500);
 	expect(calculateTaxes(80000)).toEqual(20000);
+	expect(calculateTaxes(0)).toEqual(0);
+});
+
+it("should remove duplicates from an array", function () {
+	expect(removeDupes([1, 1, 2, 2, 3, 4].toBe([1, 2, 3, 4])));
 });
